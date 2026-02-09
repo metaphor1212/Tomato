@@ -1,0 +1,199 @@
+/*電腦與平板上應用的樣式 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Mukta', sans-serif; */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #E0E1E1; */
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 80px;
+  /* margin: 0 20px; */
+}
+.logo {
+  /* width: 200px; */
+  padding: 10px;
+  text-align: center;
+}
+.logo a img{
+  width: 200px;
+  text-decoration: none;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.navbar ul > li {
+  width: 100%;
+  height: 100%;
+}
+.navbar ul > li > a {
+  width: 100%;
+  height: 100%;
+  color: rgb(123, 123, 123);
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  align-items: center;
+  padding: 10px;
+}
+.navbar ul > li > a:hover{
+  background-color: white;
+  color: cadetblue;
+}
+
+.menu-icon {
+  display: none;
+  width: 80px;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+}
+
+/* Banner */
+#banner{
+  background-color: rgb(167, 189, 230);
+  /* padding-bottom: 60px; */
+}
+.ban{
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* padding-top: 60px; */
+  /* border: 1px solid #333; */
+}
+.card{
+  /* width: 700px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.info{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding-right: 100px;
+}
+/* .info ,.p{
+  padding-right: 30px;
+} */
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+
+.picture img{
+  height: 700px;
+  /* padding-top: 50px; */
+  transform: translateY(100px);
+}
+
+/* Section-01 */
+#section-01{
+  background-color: rgb(230, 226, 190);
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+  gap: 60px;
+}
+/* .card-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+.picture-1 img{
+  height: 700px;
+  padding-top: 50px;
+}
+.card-1 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+/* Section-02 */
+#section-02{
+  background-color: rgb(186, 202, 185);
+}
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.picture-2 img{
+  height: 700px;
+  padding-top: 50px;
+}
+/* Section-03 */
+#section-03{
+  background-color: rgb(190, 230, 215);
+}
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.picture-3 img{
+  height: 700px;
+  padding-top: 50px;
+}
+
+/* Footer */
+.footer{
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote{
+  height: 500px;
+  align-content: center;
+  text-align: center;
+  /* background-color: rgb(171, 151, 190); */
+  margin: 0;
+}
+.us{
+  height: 100px;
+  align-content: center;
+  /* background-color: rgb(140, 162, 202); */
+  margin: 0;
+}
