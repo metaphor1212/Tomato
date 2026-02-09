@@ -7,6 +7,7 @@ body {
   font-size: 14px;
   font-family: "Noto Sans TC", sans-serif;
   line-height: 30px;
+  color: rgb(122, 122, 122);
   margin: 0;
   padding: 0;
   /* font-family: 'Mukta', sans-serif; */
@@ -17,8 +18,8 @@ body {
   display: flex;
   justify-content: space-around;
   /* background-color: #E0E1E1; */
-  border-bottom: 1px solid #eaeaea;
-  padding: 20px 80px;
+  box-shadow: 0 20px 2px #000000;
+  padding: 10px 80px;
   /* margin: 0 20px; */
 }
 .logo {
@@ -71,11 +72,12 @@ body {
 
 /* Banner */
 #banner{
-  background-color: rgb(167, 189, 230);
-  /* padding-bottom: 60px; */
+  /* background-color: rgb(193, 207, 232); */
+  background-image: linear-gradient(to top, #aabfe0, #8da9cd, #6f94bb, #4f80a8, #276c96);
+
 }
 .ban{
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -89,18 +91,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 20px;
+  padding: 20px 40px;
   gap: 30px;
 }
 .info{
-  width: 500px;
+  /* width: 500px; */
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
+  color: white;
   gap: 0px;
-  padding-right: 100px;
+  /* padding-right: 100px; */
+  padding: 20px 0;
 }
 .info h1{
-  font-size: 2rem;
+  font-size: 2.6rem;
+  font-family: "Noto Serif TC", serif;
+  word-wrap: break-word;
 }
 .info h4{
   font-size: 1.2rem;
@@ -109,6 +117,8 @@ body {
 }
 .info p{
   font-weight: 300;
+  padding: 20px 0;
+  margin: 0 ;
 }
 .button{
   display: flex;
@@ -119,13 +129,14 @@ body {
 
 .picture img{
   height: 700px;
-  /* padding-top: 50px; */
-  transform: translateY(100px);
+  max-width: 100%;
+  transform: translateY(150px);
 }
 
 /* Section-01 */
 #section-01{
-  background-color: rgb(230, 226, 190);
+  /* background-color: #aabfe0; */
+  background-image: linear-gradient(to top, #dee3ec, #d1dae9, #c4d1e6, #b7c8e3, #aabfe0);
 }
 .container{
   display: flex;
@@ -135,37 +146,48 @@ body {
   padding: 100px 0;
   gap: 60px;
 }
-/* .card-1{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
+
 .picture-1 img{
   height: 700px;
   padding-top: 50px;
 }
 .card-1 {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  
+}
+.card-1 h2{
+  font-size: 1.7rem;
+  font-family: "Noto Serif TC", serif;
+}
+.card-1 p{
+  font-size: 1rem;
 }
 /* Section-02 */
 #section-02{
-  background-color: rgb(186, 202, 185);
+  /* background-color: rgb(186, 202, 185); */
+  background-image: linear-gradient(to top, #c5d0e4, #cbd5e6, #d1d9e8, #d8deea, #dee3ec);
 }
 .card-2 {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   /* gap: 10px; */
+}
+.card-2 h2{
+  font-size: 1.7rem;
+  font-family: "Noto Serif TC", serif;
+}
+.card-2 p{
+  font-size: 1rem;
 }
 .picture-2 img{
   height: 700px;
@@ -173,16 +195,25 @@ body {
 }
 /* Section-03 */
 #section-03{
-  background-color: rgb(190, 230, 215);
+  /* background-color: rgb(190, 230, 215); */
+  background-image: linear-gradient(to bottom, #c5d0e4, #ccd5e6, #d3dae8, #dadfe9, #e1e4eb);
 }
 .card-3 {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   /* gap: 10px; */
+}
+.card-3 h2{
+  font-size: 1.7rem;
+  font-family: "Noto Serif TC", serif;
+}
+.card-3 p{
+  font-size: 1rem;
 }
 .picture-3 img{
   height: 700px;
@@ -207,34 +238,40 @@ body {
 }
 /* Footer */
 .footer{
-  height: 150px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(223, 151, 175);
+  background-color: #276c96;
 }
 .us{
   /* height: 100px; */
   align-content: center;
-  /* background-color: rgb(140, 162, 202); */
+  font-weight: 300;
+  color: white;
   margin: 0;
 }
 
 /* 手機版本 */
 @media (max-width: 768px){
+  body{
+    line-height: 25px;
+  }
+  h1 , h2{
+    line-height: 60px;
+  }
   .header{
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 0px;
   }
-  .logo a img{
-    /* width: 150px; */
-  }
+  
   .menu-icon {
-    display: flex;
+    width: 50px;
+    display: block;
     text-decoration: none;
-    text-decoration: none;
+    margin: auto 10px;
   }
   .navbar{
     width: 100%;
@@ -254,6 +291,52 @@ body {
     height: auto;
     padding: 30px 20px;
     /* padding-bottom: 200px; */
+  }
+  .info{
+    text-align: center;
+  }
+  /* .info h1{
+    line-height: 60px;
+  } */
+  .button{
+    margin: 0 auto;
+  }
+  .picture img{
+  transform: translateY(10px);
+  } 
+
+  /* Section-01 */
+  #section-01 .container{
+    flex-direction: column-reverse;
+  }
+  .card-1 {
+    text-align: center;
+    padding: 0 50px;
+  }
+  .picture-1 img{
+    padding: 0;
+    margin: 0 auto;
+  }
+  /* Section-02 */
+  .card-2 {
+    text-align: center;
+    padding: 0 50px;
+  }
+  .picture-2 img{
+    padding: 0;
+    margin: 0 auto;
+  }
+  /* Section-03 */
+  #section-03 .container{
+    flex-direction: column-reverse;
+  }
+  .card-3 {
+    text-align: center;
+    padding: 0 50px;
+  }
+  .picture-3 img{
+    padding: 0;
+    margin: 0 auto;
   }
 
 }
