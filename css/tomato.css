@@ -26,7 +26,16 @@ a img{
 html{
   scroll-behavior: smooth;
 }
-
+/* link */
+.link a{
+  font-size: 1rem;
+  color: #276c96;
+  border-bottom: 1px solid #276c96;
+  text-decoration: none;
+}
+.link > a:hover{
+  color: #5a84a7;
+}
 /* Header */
 .header {
   display: flex;
