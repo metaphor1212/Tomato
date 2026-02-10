@@ -13,6 +13,20 @@ body {
   /* font-family: 'Mukta', sans-serif; */
 }
 
+/* TOP */
+.back-to-top{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+}
+a img{
+  width: 70px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
 /* Header */
 .header {
   display: flex;
@@ -20,7 +34,11 @@ body {
   /* background-color: #E0E1E1; */
   box-shadow: 0 20px 2px #000000;
   padding: 10px 80px;
-  /* margin: 0 20px; */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.747);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .logo {
   /* width: 200px; */
@@ -62,12 +80,15 @@ body {
 
 .menu-icon {
   display: none;
-  width: 80px;
+  width: 60px;
   font-size: 1.2rem;
   justify-content: center;
   align-items: center;
   /* background-color: cadetblue; */
   color: #333;
+}
+.menu-icon a img{
+  width: 40px;
 }
 
 /* Banner */
@@ -126,7 +147,9 @@ body {
   justify-content: start;
   gap: 20px;
 }
-
+.button a img{
+  height: 50px;
+}
 .picture img{
   height: 700px;
   max-width: 100%;
@@ -232,7 +255,6 @@ body {
   color: white;
   font-size: 1.2rem;
   font-weight: 300;
-  /* background-color: rgb(171, 151, 190); */
   background-image: url(../img/tomo.jpg);
   margin: 0;
 }
@@ -243,7 +265,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #276c96;
+  background-color: #4f80a8;
 }
 .us{
   /* height: 100px; */
@@ -261,10 +283,13 @@ body {
   h1 , h2{
     line-height: 60px;
   }
+
   .header{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px;
+    position: static;
+    top: auto;
   }
   
   .menu-icon {
@@ -314,7 +339,7 @@ body {
     padding: 0 50px;
   }
   .picture-1 img{
-    padding: 0;
+    padding: 0 30px;
     margin: 0 auto;
   }
   /* Section-02 */
@@ -335,7 +360,7 @@ body {
     padding: 0 50px;
   }
   .picture-3 img{
-    padding: 0;
+    padding: 0 30px;
     margin: 0 auto;
   }
 
